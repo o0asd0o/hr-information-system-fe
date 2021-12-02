@@ -1,0 +1,58 @@
+@import '~antd/lib/style/themes/default.less';
+
+.pre {
+  margin: 12px 0;
+  padding: 12px 20px;
+  background: @input-bg;
+  box-shadow: @card-shadow;
+}
+
+.selectEmployee {
+  &:global(.ant-btn-primary ) {
+    border-color: #8c8c8c;
+    background: #8c8c8c;
+  }
+  
+  position: absolute;
+  top: -78px;
+  right: 0;
+}
+
+
+.documentContainer {
+  margin-top: 30px;
+}
+
+.addDocument {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
+.documents {
+  display: flex;
+  flex-wrap: wrap;
+}
+.documentItem {
+  position: relative;
+  margin-right: 20px;
+  border: rgba(0,0,0,0.1) solid 1px;
+}
+.documentImage {
+  background: transparent
+}
+.documentName {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.65);
+  bottom: 6px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  color: white;
+  padding: 3px 0;
+  font-weight: 500;
+  font-size: 12px;
+}
+.addItem {
+  background: green
+}

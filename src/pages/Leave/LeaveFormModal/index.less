@@ -1,0 +1,142 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+    
+    .title {
+        margin-bottom:20px;
+    }
+}
+
+.card {
+    margin-bottom: 24px;
+    position: relative;
+    :global {
+        .ant-pro-page-container-warp {
+            display: none;
+        }
+        .ant-picker, .ant-input-number  {
+          width: 100%;
+        }
+    }
+}
+
+.profile {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    align-items: center;
+    :global {
+        .ant-image-img {
+            border: 3px solid #c3c3c3;
+        }
+        .ant-image-img, .ant-image-mask {
+            border-radius: 50%;
+        }
+    }
+    .name {
+        margin-left: 30px
+    }
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  :global {
+    .ant-upload-picture-card-wrapper {
+      text-align: center;
+    }
+    .ant-upload.ant-upload-select-picture-card {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+.heading {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.steps:global(.ant-steps) {
+  max-width: 750px;
+  margin: 16px auto;
+}
+
+.errorIcon {
+  margin-right: 24px;
+  color: @error-color;
+  cursor: pointer;
+
+  span.anticon {
+    margin-right: 4px;
+  }
+}
+
+.errorPopover {
+  :global {
+    .ant-popover-inner-content {
+      min-width: 256px;
+      max-height: 290px;
+      padding: 0;
+      overflow: auto;
+    }
+  }
+}
+
+.errorListItem {
+  padding: 8px 16px;
+  list-style: none;
+  border-bottom: 1px solid @border-color-split;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: @item-active-bg;
+  }
+  &:last-child {
+    border: 0;
+  }
+  .errorIcon {
+    float: left;
+    margin-top: 4px;
+    margin-right: 12px;
+    padding-bottom: 22px;
+    color: @error-color;
+  }
+  .errorField {
+    margin-top: 2px;
+    color: @text-color-secondary;
+    font-size: 12px;
+  }
+}
+
+.editable {
+  td {
+    padding-top: 13px !important;
+    padding-bottom: 12.5px !important;
+  }
+}
+
+// custom footer for fixed footer toolbar
+.advancedForm + div {
+  padding-bottom: 64px;
+}
+
+.advancedForm {
+  :global {
+    .ant-form .ant-row:last-child .ant-form-item {
+      margin-bottom: 24px;
+    }
+    .ant-table td {
+      transition: none !important;
+    }
+  }
+}
+
+.optional {
+  color: @text-color-secondary;
+  font-style: normal;
+}

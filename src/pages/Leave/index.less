@@ -1,0 +1,61 @@
+@import '~antd/lib/style/themes/default.less';
+
+.pre {
+  margin: 12px 0;
+  padding: 12px 20px;
+  background: @input-bg;
+  box-shadow: @card-shadow;
+}
+
+.wrapper {
+  :global {
+    .ant-upload-picture-card-wrapper {
+      text-align: center;
+    }
+    .ant-upload.ant-upload-select-picture-card {
+      width: 150px;
+      height: 150px;
+    }
+    .ant-tag {
+      margin-right: 0px !important;
+    }
+  }
+}
+
+.summaryContainer {
+  display: flex;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 15px;
+  padding-right: 45px;
+  padding-left: 45px;
+  &:first-child {
+    border-right: 1px solid rgba(0,0,0,0.1);
+  }
+}
+
+.itemSummary {
+  margin-bottom: 30px;
+  display: flex;
+  .label {
+    margin-right: auto;
+  }
+  .value {
+    font-weight: bold;
+  }
+}
+
+.selectEmployee {
+  &:global(.ant-btn-primary ) {
+    border-color: #8c8c8c;
+    background: #8c8c8c;
+  }
+  
+  position: absolute;
+  top: -78px;
+  right: 0;
+}
