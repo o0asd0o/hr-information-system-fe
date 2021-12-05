@@ -1,5 +1,11 @@
 # How to run
 
-1. Install Packages yarn install
+1. Install Packages
 
-2. Start the project yarn start
+- yarn install
+
+2. Start the project
+
+- yarn start
+
+3. Go to localhost:8000
